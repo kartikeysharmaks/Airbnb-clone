@@ -16,11 +16,11 @@ export default function Home({
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Airbnb-clone</title>
+        <link rel="icon" href="https://ebenezersuites.com/wp-content/uploads/2016/06/airbnb-logo-266x300@2x.png" />
       </Head>
 
-      <Header />
+      <Header placeholder={'Start your Search'}/>
       <Banner />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
         <section className="pt-6">
@@ -41,7 +41,7 @@ export default function Home({
             Live Anywhere
           </h2>
           <div className="-ml-3 flex space-x-3 overflow-scroll p-3 scrollbar-hide">
-            {cardsData?.map((item: any) => (
+            {cardsData?.map((item:any) => (
               <MediumCard key={item.img} img={item.img} title={item.title} />
             ))}
           </div>
