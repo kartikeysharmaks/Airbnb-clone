@@ -23,7 +23,7 @@ function InfoCard({
   return (
     <div className="flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg">
       <div className="relative h-24 w-40 md:h-52 md:w-80 transition duration-200 ease-out first:border-t">
-        <Image src={img} layout="fill" objectFit="cover" className='rounded-2xl'/>
+        <Image src={img} layout="fill" objectFit='cover' className='rounded-2xl'/>
       </div>
       <div className="flex flex-grow flex-col pl-5">
         <div className="flex justify-between">
@@ -50,4 +50,4 @@ function InfoCard({
   )
 }
 
-export default InfoCard
+export default InfoCard;

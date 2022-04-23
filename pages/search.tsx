@@ -3,14 +3,14 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import InfoCard from '../components/InfoCard';
-import SmallCard from '../components/SmallCard';
+import Maps from '../components/Map';
+
 
 function Search({searchResults}:{searchResults:any}) {
     const router = useRouter();
     const {location,numberofGuests,} = router.query;
     const sdate = router.query.startDate?.slice(0,15);
     const edate = router.query.endDate?.slice(0,15);
-    console.log(searchResults);
     
   return (
     <div>
@@ -49,8 +49,10 @@ function Search({searchResults}:{searchResults:any}) {
             ))} 
           </div>
         </section>
+        <section className='hidden xl:inline-flex'>
+        <Maps searchResults={searchResults}/>
+        </section>
       </main>
-      
       <Footer />
     </div>
   );
