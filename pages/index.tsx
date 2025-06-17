@@ -50,7 +50,7 @@ export default function Home({
           </div>
         </section>
         <LargeCard
-          img="https://links.papareact.com/4cj"
+          img="https://a0.muscache.com/im/pictures/2da67c1c-0c61-4629-8798-1d4de1ac9291.jpg?im_w=1440"
           title="The Greatest Outdoors"
           description="Wishlists curated by Airbnb"
           buttonText="Get Inspired"
@@ -62,11 +62,11 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://links.papareact.com/pyp').then(
+  const exploreData = await fetch('https://www.jsonkeeper.com/b/4G1G').then(
     (res) => res.json()
   )
 
-  const cardsData = await fetch('https://links.papareact.com/zp1').then((res) =>
+  const cardsData = await fetch('https://www.jsonkeeper.com/b/VHHT').then((res) =>
     res.json()
   )
 

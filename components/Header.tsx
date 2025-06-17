@@ -48,7 +48,7 @@ function Header({placeholder}: {placeholder:any}) {
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white p-5 shadow-md md:px-10">
       <div onClick={home} className="relative my-auto flex h-10 cursor-pointer items-center">
         <Image
-          src="https://links.papareact.com/qd3"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
           layout="fill"
           objectFit="contain"
           objectPosition="left"
